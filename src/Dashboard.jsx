@@ -26,7 +26,7 @@ const statusStyles = {
 
     return (
     <>
-      <nav className="bg-white flex justify-between p-5 items-center mx-auto container">
+      <nav className="bg-white flex justify-between p-5 items-center overflow-x-hidden mx-auto container">
         <div>
         <img  className='mr-20' src={logo}
          alt="logo-icon" />
@@ -55,7 +55,7 @@ const statusStyles = {
         </div>
       </nav>
 
-      <div className='flex mx-auto container gap-40 mt-6'>
+      <div className='flex mx-auto container gap-40 mt-6 overflow-x-hidden'>
         <h4 className='ml-5 font-bold text-[10px]'>MAIN MENU</h4>
         <h3 className='font-bold text-blue-900 text-[20px]'>Dashboard</h3>
       </div>
@@ -63,7 +63,7 @@ const statusStyles = {
       
 
       
-      <div className="flex min-h-screen bg-gray-100 container mx-auto">
+      <div className="flex min-h-screen bg-gray-100 container mx-auto overflow-x-hidden">
       {/* Sidebar */}
       <aside className="w-64 bg-white p-4 ">
         
@@ -81,7 +81,7 @@ const statusStyles = {
       </aside>
 
       {/* Main Content */}
-      <main className=" mx-auto container p-10 ">
+      <main className=" mx-auto container p-10 overflow-x-hidden ">
           
 
         {/* Summary Cards */}
@@ -112,7 +112,7 @@ const statusStyles = {
         </div>
 
        
-        <div className="bg-white p-6 mx-auto container mt-10">
+        <div className="bg-white p-6 mx-auto container mt-10 overflow-hidden">
           <h3 className=" font-semibold mb-4 text-[20px]">Taskboard</h3>
           <table className="w-full table-auto text-sm">
             <thead>
