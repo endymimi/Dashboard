@@ -44,14 +44,15 @@ const statusStyles = {
            alt="search-icon" />
          </div>
       
-      <div className="flex items-center   ">
+      <div className="   ">
           
-          <div className="flex items-center gap-4 cursor-pointer">
+          <div className="flex items-center  cursor-pointer gap-3 mr-50">
             <img src={notifyicon} alt="" />
             <img src={messageicon} alt="" />
             <img src={eclipseimg} alt="" />
             <h4>Akinwunmi</h4>
-            <img src={arrowdown} alt="dropdown" />
+        
+        <img  src={arrowdown} alt="" />
             
           </div>
         </div>
