@@ -12,6 +12,8 @@ import messageicon from "./assets/message-text.png";
 import eclipseimg from "./assets/Ellipsedash.svg";
 import arrowdown from "./assets/arrowdown.svg";
 import frameone from "./assets/Frame1.png"
+import taskgreen from "./assets/task-square.svg";
+import calender from "./assets/calendar.svg";
 
 
 const Dashboard = () => {
@@ -57,7 +59,7 @@ const statusStyles = {
 
       <div className='flex mx-auto container gap-40 mt-6 overflow-x-hidden'>
         <h4 className='ml-5 font-bold text-[10px]'>MAIN MENU</h4>
-        <h3 className='font-bold text-blue-900 text-[20px]'>Dashboard</h3>
+        <h3 className='font-bold text-[#161E54] text-[20px]'>Dashboard</h3>
       </div>
       
       
@@ -69,13 +71,13 @@ const statusStyles = {
         
         <div className="space-y-4 text-gray-600">
           
-           <a className='flex items-center gap-2 text-blue-600 font-semibold' href="#Dashboard"><MdOutlineDashboard /> Dashboard</a>
+           <a className='flex items-center gap-2 text-[#3439CA] font-semibold' href="#Dashboard"><MdOutlineDashboard /> Dashboard</a>
     
-            <a className='flex items-center gap-2' href="#"><BsFillPeopleFill /> Employees</a>
-          <a className='flex items-center gap-2' href="#Taskboard"> <FaTasks /> Taskboard</a>
-          <a className='flex items-center gap-2' href="#"> <MdOutlineLeaderboard /> Leaderboard</a>
-          <a className='flex items-center gap-2' href="#"> <FaCalendarAlt /> Leaveboard</a>
-          <a className='flex items-center gap-2' href=""><FiSettings /> Settings</a>
+            <a className='flex items-center gap-2 text-[#343536]' href="#"><BsFillPeopleFill /> Employees</a>
+          <a className='flex items-center gap-2 text-[#343536]' href="#Taskboard"> <FaTasks /> Taskboard</a>
+          <a className='flex items-center gap-2 text-[#343536]' href="#"> <MdOutlineLeaderboard /> Leaderboard</a>
+          <a className='flex items-center gap-2 text-[#343536]' href="#"> <FaCalendarAlt /> Leaveboard</a>
+          <a className='flex items-center gap-2 text-[#343536]' href=""><FiSettings /> Settings</a>
           
         </div>
       </aside>
@@ -99,7 +101,7 @@ const statusStyles = {
               <p className="text-sm text-gray-600">Total Tasks</p>
             <p className="text-xl font-bold text-[30px]">107</p>
             </div>
-            <FaTasks className="text-5xl mx-auto text-green-800  " />
+            <img className="text-5xl mx-auto mb-2" src={taskgreen} alt="task-icon" />
           </div>
           <div className="bg-white  flex">
            
@@ -107,7 +109,7 @@ const statusStyles = {
               <p className="text-sm text-gray-600">Current Leaves</p>
             <p className="text-[30px] font-bold">15</p>
             </div>
-             <FaCalendarAlt className="text-5xl mx-auto mb-2 text-blue-600" />
+            <img className="text-5xl mx-auto mb-2" src={calender} alt="calendar-icon" />
           </div>
         </div>
 
@@ -128,13 +130,13 @@ const statusStyles = {
               {tasks.map((task, index) => (
                 <tr key={task.id} className="">
                   <td className="py-2">{index + 1}</td>
-                  <td className="py-2">{task.task}</td>
+                  <td className="py-2 text-[#292929]">{task.task}</td>
                   <td className="py-2">
                     <div className="flex mx-auto container">
                       {[...Array(task.team)].map((_, idx) => (
                         <div
                           key={idx}
-                          className="w-25 h-10  rounded-full  border-white"
+                          className="w-22 h-8  rounded-full  border-white"
                         ><img src={task.team} alt="" /> </div>
                       ))}
                     </div>
